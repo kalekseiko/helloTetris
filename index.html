@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Тетрис</title>
+  <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+
+	<canvas class="myCanvas" id="myCanvas" 	width= "320" 
+	height = "480"></canvas>
+
+ 	<!-- Функции которые никуда невозможно отнести, но которые нужны для работы игры -->
+	<script src = "scripts/service.js"></script>
+  	<!-- Класс который обрабатывает фигуры -->
+  <script src = "scripts/figures.js"></script>
+	<!-- Загрузка и инициализация игровых параметров -->
+	<script src = "scripts/on_initialize.js"></script>
+	<!-- События вызванные пользователем: нажатие клавиши, жмаканье мышкой, прикосновение к тачскрину и т.д.-->
+	<script src = "scripts/on_event.js"></script>
+	<!-- реакция игры на события вызванные пользователем, обработка столкновений, расчет бонусов, и т.д.-->
+	<script src = "scripts/on_logics.js"></script>
+	<!-- Отрисовка изображения -->
+	<script src = "scripts/on_render.js"></script>
+	<!-- Главный игровой цикл -->
+	<script src = "scripts/on_loop.js"></script>
+</body>
+</html>
